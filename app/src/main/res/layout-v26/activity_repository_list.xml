@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/dark_blue_background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_repository_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GitHub Repository Finder"
+            style="@style/title"
+            android:textSize="30sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sv_repository"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/no_border_rounded_bg"
+        android:backgroundTint="@color/search_view_background"
+        android:textCursorDrawable="@color/text_value"
+        android:paddingBottom="5dp"
+        app:iconifiedByDefault="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/tv_repository_list"
+        style="@style/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFeatureSettings="smcp"
+        android:text="List of Repositories"
+       android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_repositories_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/iv_recycler_view_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:src="@drawable/github_background" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/repository_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:scrollbarSize="9dp"
+
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:context="com.smartherd.globofly.activities.DestinationListActivity"
+            tools:listitem="@layout/repository_holder" />
+
+    </FrameLayout>
+
+</LinearLayout>

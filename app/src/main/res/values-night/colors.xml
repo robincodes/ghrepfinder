@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="cyan_background">#FF8ED0ED</color>
+    <color name="cyan_background_clearer">#FFB9E5F6</color>
+
+    <color name="grey_dark">#cccccc</color>
+    <color name="grey_light">#f2f2f2</color>
+
+
+    <color name="dark_blue_background">#0021F4</color>
+    <color name="light_blue_background">#0262F3</color>
+
+
+    <!--fragment_repository_list-->
+    <color name="search_view_background">#a6a6a6</color>
+
+    <!--    repository_holder.xml   -->
+    <color name="card_background">#a6a6a6</color>
+
+
+    <!--    fragment_dialog_repository_detail.xml   -->
+    <color name="background_dialog">#737373</color>
+    <color name="background_section">#a6a6a6</color>
+    <color name="text_description">#d9d9d9</color>
+    <color name="text_value">#e6e6e6</color>
+
+
+</resources>
